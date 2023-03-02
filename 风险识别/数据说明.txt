@@ -1,0 +1,14 @@
+交易信息			
+数据名称	    字段英文名称	数据格式	        样例
+交易流水序号	jylsxh	        CHAR(32)	    638b56c101fc3fb2e6fc95fa5d9c1cd5
+账户代号	    zhdh	        CHAR(16)	    6d8017a6f24eeb25
+对方账号	    dfzh	        CHAR(16)	    4eeb256d8017a6f2
+借贷标志	    jdbz	        NUMBER	        0-出账；1-入账
+交易金额	    jyje	        NUMBER	        35.6
+交易余额	    jyye	        NUMBER	        1035.6
+对方行号	    dfhh	        CHAR(8)	        0c5342ba
+交易日期	    jyrq	        YYYY-MM-DD	    2020-05-23
+交易时间	    jysj	        HH:mm:ss	    09:23:12
+交易渠道	    jyqd	        CHAR(8)	        cba76428
+摘要代号	    zydh	        CHAR(8)	        c092bf82
+对方名称长度    dfmccd	        INT	18
