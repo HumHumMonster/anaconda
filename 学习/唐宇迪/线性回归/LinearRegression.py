@@ -71,7 +71,21 @@ class LinearRegression :
         return predictions ;
             
     def get_cost (self, data, labels) :
-        data_processed = prepare_for_training (data ,
-                                               )
+        data_processed = prepare_for_training(data ,
+            self.polynomial_degree ,
+            self.sinusoid_degree ,
+            self.normalize_data
+            )[0] ;
+
+        return self.cost_function(data_processed, labels) ;
 
 
+
+    def predict(self, data) :
+        data_processed = prepare_for_training(data ,
+            self.polynomial_degree ,
+            self.sinusoid_degree ,
+            self.normalize_data
+        )[0] ;
+
+        predictions = LinearRegression.hypothesis(data_processed, self.theta) ;
